@@ -11,7 +11,13 @@
 
 *Ranks 100,000+ candidates for a Senior AI Engineer role using dense semantic search, knowledge graphs, lexical expansion, and cross-encoder re-ranking — all on CPU, in under 60 seconds.*
 
-[Architecture](#-architecture) · [Quick Start](#-quick-start) · [Results](#-results) · [Live Demo](https://huggingface.co/spaces/rishi-sharma/ai-recruiter)
+<br>
+
+[![🚀 Live Demo — Try It Now](https://img.shields.io/badge/🚀_LIVE_DEMO_—_Try_It_Now-FF6F00?style=for-the-badge&logoColor=white&logo=streamlit)](https://huggingface.co/spaces/rishi-sharma/ai-recruiter)
+
+<br>
+
+[Architecture](#-architecture) · [Quick Start](#-quick-start) · [Results](#-results)
 
 </div>
 
