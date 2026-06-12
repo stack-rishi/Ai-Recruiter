@@ -1,0 +1,14 @@
+# Ignore everything by default to prevent leaking private data or large models
+*
+
+# Explicitly whitelist ONLY the required files for Stage 3 reproduction
+!.gitignore
+!rank.py
+!precompute.py
+!features.py
+!requirements.txt
+!README.md
+!submission_metadata.yaml
+!Dockerfile
+!val4.py
+!val5.py

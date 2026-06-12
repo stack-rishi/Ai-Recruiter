@@ -1,0 +1,54 @@
+# Redrob Hackathon — Submission Metadata
+
+team_name: "YOUR-TEAM-NAME-HERE"  
+
+primary_contact:
+  name: "Anshika Roy"         
+  email: "anshikaroy523@gmail.com"        
+  phone: "+91-9123194644"        
+
+team_members:
+  - name: "Rishi Sharma"      
+    email: "rsharma.stack@gmail.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/stack-rishi/Ai-Recruiter"  # <-- CHANGE THIS
+sandbox_link: "https://huggingface.co/spaces/rishi-sharma/ai-recruiter"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --embeddings ./embeddings_full.npz --out ./submission.csv"
+
+compute:
+  platform: "Windows 10, Intel CPU"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows 10"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 80
+
+ai_tools_used:
+  - "Claude"
+
+ai_usage_summary: |
+  Used Claude as AI coding assistants for architecture discussion and code review. No candidate data was fed to
+  any external LLM during ranking inference. The pipeline runs entirely offline
+  with local models (BGE-Small, MiniLM Cross-Encoder).
+
+methodology_summary: |
+  Multi-stage retrieval and ranking pipeline processing 100K candidates in under
+  60 seconds on CPU. Stage 1: Dense retrieval with BGE-Small embeddings (cosine
+  similarity, top 3000). Stage 2: Skill-based Personalized PageRank knowledge
+  graph. Stage 3: BM25 lexical scoring with pseudo-relevance feedback query
+  expansion. Stage 4: Cross-Encoder semantic re-ranking (top 300). Stage 5:
+  Career evidence bonuses, domain penalties, honeypot detection, and recruiter
+  response rate multipliers. Reasoning is grounded in actual candidate profile
+  data with rank-banded tone and honest concerns.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
