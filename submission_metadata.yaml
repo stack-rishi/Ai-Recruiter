@@ -1,6 +1,6 @@
 # Redrob Hackathon — Submission Metadata
 
-team_name: "YOUR-TEAM-NAME-HERE"  
+team_name: "AI-Recruiter"
 
 primary_contact:
   name: "Anshika Roy"         
@@ -12,7 +12,7 @@ team_members:
     email: "rsharma.stack@gmail.com"
     role: "ML Engineer"
 
-github_repo: "https://github.com/stack-rishi/Ai-Recruiter"  # <-- CHANGE THIS
+github_repo: "https://github.com/stack-rishi/Ai-Recruiter"
 sandbox_link: "https://huggingface.co/spaces/rishi-sharma/ai-recruiter"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --embeddings ./embeddings_full.npz --out ./submission.csv"

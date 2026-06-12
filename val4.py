@@ -1,6 +1,6 @@
 import csv, json
 
-with open('C:\\Users\\RISHI\\Desktop\\Ai-Recruiter\\[PUB] India_runs_data_and_ai_challenge\\[PUB] India_runs_data_and_ai_challenge\\India_runs_data_and_ai_challenge\\candidates.jsonl', encoding='utf-8') as f:
+with open('candidates.jsonl', encoding='utf-8') as f:
     all_candidates = {json.loads(l)['candidate_id']: json.loads(l) 
                       for l in f if l.strip()}
 
